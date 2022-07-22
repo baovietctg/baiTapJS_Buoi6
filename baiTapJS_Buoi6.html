@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JS Buổi 6</title>
+    <!-- BS 4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+  integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container py-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#baiTap1" role="tab" aria-controls="home"
+              aria-selected="true">Bài tập 1</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#baiTap2" role="tab" aria-controls="profile"
+              aria-selected="false">Bài tập 2</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#baiTap3" role="tab" aria-controls="contact"
+              aria-selected="false">Bài tập 3</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#baiTap4" role="tab" aria-controls="contact"
+              aria-selected="false">Bài tập 4</a>
+          </li>
+        </ul>
+        <div class="tab-content w-50" id="myTabContent">
+          <div class="tab-pane fade show active" id="baiTap1" role="tabpanel" aria-labelledby="home-tab">
+            <div class=" container py-5" id="bai1">
+              <h3>Bài tập 1 - Tìm số nguyên dương nhỏ nhất sao cho: 1 + 2 + ... + n >10000</h3>
+              <p class="alert alert-info" id="txtResultbai1"></p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="baiTap2" role="tabpanel" aria-labelledby="profile-tab">
+            <div class=" container py-5" id="bai2">
+              <h3>Bài tập 2 - Nhập vào 2 số x, n => tính tổng: S(n) = x + x^2 + x^3 + ... + x^n</h3>
+              <div class="form-group">
+                <input type="number" class="form-control" id="soX" placeholder="Nhập số x">
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" id="soN" placeholder="Nhập số n">
+              </div>
+              <form>
+                <button type="button" id="tinhBai2" class="btn btn-success">Tính tổng</button>
+              </form>
+              <p class="alert alert-info" id="txtResultbai2"></p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="baiTap3" role="tabpanel" aria-labelledby="contact-tab">
+            <div class=" container py-5" id="bai3">
+              <h3>Bài tập 3 - Tính giai thừa 1*2*...*n</h3>
+              <div class="backgou" id="div"></div>
+              <form>
+                <div class="form-group">
+                  <label for="soN2">Nhập số n</label>
+                  <input type="number" class="form-control" id="soN2">
+                </div>
+                <button type="button" id="tinhBai3" class="btn btn-success">Tính n!</button>
+              </form>
+              <p class="alert alert-info" id="txtResultbai3"></p>
+            </div>
+          </div>
+    
+    
+          
+          <div class="tab-pane fade" id="baiTap4" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="container py-5" id="bai4">
+              <h3>Bài tập 4 - Tạo div màu mè</h3>
+                <button type="button" id="tinhBai4" class="btn btn-success">Tạo div</button>
+              </form>
+              <p class="alert alert-info" id="txtResultbai4"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- BS 4 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+  crossorigin="anonymous"></script>
+  <script src="./baiTapJS_Buoi6.js"></script>
+</body>
+</html>
