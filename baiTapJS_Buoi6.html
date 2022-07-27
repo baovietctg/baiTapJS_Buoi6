@@ -28,6 +28,10 @@
             <a class="nav-link" id="contact-tab" data-toggle="tab" href="#baiTap4" role="tab" aria-controls="contact"
               aria-selected="false">Bài tập 4</a>
           </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#baiTap5" role="tab" aria-controls="contact"
+              aria-selected="false">Bài tập 5</a>
+          </li>
         </ul>
         <div class="tab-content w-50" id="myTabContent">
           <div class="tab-pane fade show active" id="baiTap1" role="tabpanel" aria-labelledby="home-tab">
@@ -54,7 +58,7 @@
           <div class="tab-pane fade" id="baiTap3" role="tabpanel" aria-labelledby="contact-tab">
             <div class=" container py-5" id="bai3">
               <h3>Bài tập 3 - Tính giai thừa 1*2*...*n</h3>
-              <div class="backgou" id="div"></div>
+
               <form>
                 <div class="form-group">
                   <label for="soN2">Nhập số n</label>
@@ -65,15 +69,29 @@
               <p class="alert alert-info" id="txtResultbai3"></p>
             </div>
           </div>
-    
-    
-          
           <div class="tab-pane fade" id="baiTap4" role="tabpanel" aria-labelledby="contact-tab">
             <div class="container py-5" id="bai4">
               <h3>Bài tập 4 - Tạo div màu mè</h3>
                 <button type="button" id="tinhBai4" class="btn btn-success">Tạo div</button>
               </form>
-              <p class="alert alert-info" id="txtResultbai4"></p>
+              <p class="alert alert-info" id="txtResultbai4">
+              </p>
+
+
+            </div>
+          </div>
+          <div class="tab-pane fade" id="baiTap5" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="container py-5" id="bai5">
+              <h3>Bài tập 5 - In các số nguyên tố từ 1 tới giá trị của ô input</h3>
+              <div class="form-group">
+                <input type="number" class="form-control" id="soNguyenTo" placeholder="Nhập số n">
+              </div>
+                <button type="button" id="tinhBai5" class="btn btn-success">In số nguyên tố</button>
+              </form>
+              <p class="alert alert-info" id="txtResultbai5">
+              </p>
+
+
             </div>
           </div>
         </div>
